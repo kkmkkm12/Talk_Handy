@@ -11,9 +11,13 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="현재 선택한 지문자"
+        android:textSize="30dp"
+        android:layout_gravity="center_horizontal
+"
         android:id="@+id/select_study"/>
 
     <ImageView
+        android:id="@+id/studyImage"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_weight="40"
@@ -29,12 +33,10 @@
         android:layout_height="0dp"
         android:layout_weight="40" />
 
-
-
-
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="study"/>
+        android:layout_gravity="center"
+        android:text="쌍자음은 해당 지문자를 두번 취하시면 됩니다."/>
 
 </LinearLayout>

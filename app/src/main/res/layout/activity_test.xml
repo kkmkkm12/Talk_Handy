@@ -7,11 +7,25 @@
     android:orientation="vertical"
     android:weightSum="100"
     tools:context=".StudyActivity">
-
-    <TextView
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="test"/>
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/question_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18dp"
+            android:text="0"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18dp"
+            android:text="을/를 제한시간 안에 표시하시오(제한시간 30초)."/>
+    </LinearLayout>
+
 
     <androidx.camera.view.PreviewView
         android:id="@+id/previewView"
@@ -23,5 +37,19 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="정답입니다. / 오답입니다."/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="맞았다는 버튼(테스트용)"
+        android:id="@+id/correct_btn"/>
+
+    <ProgressBar
+        android:id="@+id/progress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style = "@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:max="300"
+        android:progress="0"/>
 
 </LinearLayout>
